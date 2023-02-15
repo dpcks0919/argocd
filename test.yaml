@@ -15146,6 +15146,8 @@ metadata:
     app.kubernetes.io/name: argocd-redis
     app.kubernetes.io/part-of: argocd
   name: argocd-redis
+imagePullSecrets:
+- name: kakaoicms-dev-secret
 ---
 apiVersion: v1
 kind: ServiceAccount
@@ -16127,8 +16129,6 @@ spec:
           capabilities:
             drop:
             - ALL
-      imagePullSecrets:
-      - name: kakaoicms-dev-secret
       securityContext:
         runAsNonRoot: true
         runAsUser: 999
