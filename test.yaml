@@ -16128,7 +16128,7 @@ spec:
             drop:
             - ALL
       imagePullSecrets:
-        - name: kakaoicms-dev-secret
+      - name: kakaoicms-dev-secret
       securityContext:
         runAsNonRoot: true
         runAsUser: 999
