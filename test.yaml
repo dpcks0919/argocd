@@ -16117,7 +16117,7 @@ spec:
         - ""
         - --appendonly
         - "no"
-        image: kakaoicms.kr-central-1.kcr.dev/redis/redis:7.0.7-alpine
+        image: kakaoicms.kr-central-1.kcr.dev/redis/redis:0.0.1
         imagePullPolicy: Always
         name: redis
         ports:
